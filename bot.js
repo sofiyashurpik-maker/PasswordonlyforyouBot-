@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = 'ТВОЙ_ТОКЕН_ЗДЕСЬ'; // Потом заменим на настоящий
+const token = process.env.TOKEN; // Потом заменим на настоящий
 const bot = new TelegramBot(token, { polling: true });
 
 function generatePassword(length = 12) {
